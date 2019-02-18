@@ -127,13 +127,13 @@ public class ListManagement {
 
         System.out.print("请输入您要删除信息的学生的学号: ");
 
-        String number1 = input.next();
+        int number1 = input.nextInt();
 
         int i, flag = length;
 
         for(i = 0; i < length; i++) {
 
-            if(number1.equals(data[i].id)) {
+            if(number1==data[i].id) {
 
                 flag = i; break;
 
@@ -175,13 +175,13 @@ public class ListManagement {
 
         System.out.print("请输入您要查询成绩的学生的学号：");
 
-        String number2 = input.next();
+        int number2 = input.nextInt();
 
         int i;
 
         for(i = 0; i < length; i++) {
 
-            if(number2.equals(data[i].id)) {
+            if(number2==data[i].id) {
 
                 System.out.println("====================================");
 
